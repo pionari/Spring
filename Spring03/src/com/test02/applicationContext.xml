@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="park" class="com.test02.Emp">
+		<constructor-arg><value>박진희</value></constructor-arg>
+		<constructor-arg><value>500</value></constructor-arg>
+	</bean>
+	<bean id="la" class="com.test02.Emp">
+		<property name="name" value="라현준"></property>
+		<property name="salary" value="500"></property>
+	</bean>
+
+</beans>

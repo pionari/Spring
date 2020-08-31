@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<bean id="lee" class="com.test04.Emp">
+	<property name="name" value="이순신"></property>
+	<property name="salary" value="250"></property>
+</bean>
+
+<!-- 위에서 지정한 lee를 참조하여 emp 값 주입 -->
+<bean id="leess" class="com.test04.Engineer">
+	<constructor-arg name="emp" ref="lee"></constructor-arg>
+	<constructor-arg name="dept" value="기술팀"></constructor-arg>
+</bean>
+
+<!-- EMP클래스 안에 name과 salary가 getter and setter로 존재 -->
+<bean id="hong" class="com.test04.Emp">
+	<property name="name" value="홍길동"></property>
+	<property name="salary" value="250"></property>
+</bean>
+
+<!-- 위에서 지정한 hong을 참조하여 emp 값 주입 -->
+<bean id="honggd" class="com.test04.Developer">
+	<constructor-arg index="0" ref="hong"></constructor-arg>
+	<constructor-arg index="1" value="개발팀"></constructor-arg>
+</bean>
+
+</beans>

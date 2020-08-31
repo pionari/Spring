@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="SS" class="com.test07.SSTV" lazy-init="true"></bean>
+<!-- lazy-init : 해당빈이 호출되지 않으면 생성 되지 않는다. 호출 될 때 객체가 생성됨 -->
+<bean id="IG" class="com.test07.IgTV"></bean>
+</beans>
