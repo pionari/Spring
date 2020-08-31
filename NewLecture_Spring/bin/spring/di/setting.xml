@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- id는 변수명 class는 어떤 객체를 사용할건지 패키지명까지 기입 -->
+	
+	<!-- Exam exam = new NewlecExam(); -->
+	<bean id="exam" class="spring.di.entity.NewlecExam" />
+
+	<!-- ExamConsole console = new InlineExamConsole(exam); -->
+	<bean id="console" class="spring.di.ui.InlineExamConsole">
+		<!-- console.setExam(exam); -->
+		<!-- 반드시 setter가 있는 경우에만 property 사용 가능 -->
+		<property name="exam" ref="exam"/>
+	</bean>
+	
+</beans>
