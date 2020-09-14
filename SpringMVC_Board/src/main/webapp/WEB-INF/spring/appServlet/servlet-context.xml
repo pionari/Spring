@@ -23,6 +23,12 @@
 	
 	<context:component-scan base-package="com.upgrade.mvc" />
 	
+	<interceptors>
+		<interceptor>
+			<mapping path="/*/*"/>
+			<beans:bean class="com.upgrade.mvc.interceptor.LoginInterceptor"/>
+		</interceptor>
+	</interceptors>
 	
 	
 </beans:beans>

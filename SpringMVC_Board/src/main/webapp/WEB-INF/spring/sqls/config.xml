@@ -3,10 +3,12 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="com.upgrade.mvc.dto.BoardDto" alias="BoardDto" />
+		<typeAlias type="com.upgrade.mvc.dto.MemberDto" alias="MemberDto" />
 	</typeAliases>
 
 	<mappers>
 		<mapper resource="/mybatis/board-mapper.xml" />
+		<mapper resource="/mybatis/member-mapper.xml" />
 	</mappers>
 	
 </configuration>

@@ -153,12 +153,44 @@
 		<!-- spring-orm : 오브젝트와 db 연동-->
 		<!-- 버전 바꾸기 중요 ! 스프링프레임워크 버전으로! -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-orm</artifactId>
 		    <version>${org.springframework-version}</version>
 		</dependency>
+		
+		<!-- AOP -->
+		<!-- aspectjrt -->
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+		<dependency>
+		    <groupId>org.aspectj</groupId>
+		    <artifactId>aspectjrt</artifactId>
+		    <version>${org.aspectj-version}</version>
+		</dependency>
+		
+		<!-- aspectj -->
+		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+		<dependency>
+		    <groupId>org.aspectj</groupId>
+		    <artifactId>aspectjweaver</artifactId>
+		    <version>${org.aspectj-version}</version>
+		    <scope>runtime</scope>
+		</dependency>
+		
+		<!-- LOGIN -->
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.11.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-mapper-asl -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		
 		
 		       
 	</dependencies>
